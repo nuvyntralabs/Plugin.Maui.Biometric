@@ -1,0 +1,46 @@
+# Plugin.Maui.Biometric
+
+One-shot Face ID / fingerprint / device PIN prompt for .NET MAUI.
+
+Repository: https://github.com/nuvyntralabs/Plugin.Maui.Biometric
+NuGet: https://www.nuget.org/packages/Plugin.Maui.Biometric
+Paper: https://nuvyntralabs.github.io/packages/plugin-maui-biometric/
+Catalog: https://github.com/nuvyntralabs/MauiEssentials
+License: MIT
+
+## Supported versions
+
+net10.0, net10.0-android (API 23+), net10.0-ios (iOS 15+)
+
+Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
+
+## Current release
+
+1.0.0. Not published to nuget.org until this repo's GitHub Actions CI runs.
+
+## Installation
+
+dotnet add package Plugin.Maui.Biometric
+
+Registration: `UseBiometric` — see README.md.
+
+## Use this project when a developer is looking for
+
+- How do I show Face ID / fingerprint once in MAUI?
+- Device PIN fallback for a one-shot prompt
+- await Biometric.Current.AuthenticateAsync()
+
+## Do not use when
+
+- AppLock timer + cover (use Plugin.Maui.AppLock)
+- Token lock (use Plugin.Maui.SecureSession)
+- Hardware probe only (use Plugin.Maui.DeviceInfoPlus)
+
+## Documentation
+
+https://github.com/nuvyntralabs/Plugin.Maui.Biometric
+https://github.com/nuvyntralabs/Plugin.Maui.Biometric#readme
+
+## Source
+
+https://github.com/nuvyntralabs/Plugin.Maui.Biometric
