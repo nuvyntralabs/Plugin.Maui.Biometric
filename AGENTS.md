@@ -1,11 +1,11 @@
-# Plugin.Maui.Biometric — AI Coding Agent Guide
+# Plugin.Maui.BiometricPlus — AI Coding Agent Guide
 
 ## Project
 
 One-shot Face ID / fingerprint / device PIN prompt.
 
-- Package: `Plugin.Maui.Biometric`
-- NuGet: https://www.nuget.org/packages/Plugin.Maui.Biometric
+- Package: `Plugin.Maui.BiometricPlus`
+- NuGet: https://www.nuget.org/packages/Plugin.Maui.BiometricPlus
 - GitHub: https://github.com/nuvyntralabs/Plugin.Maui.Biometric
 - Paper: https://nuvyntralabs.github.io/packages/plugin-maui-biometric/
 - Catalog: https://github.com/nuvyntralabs/MauiEssentials

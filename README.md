@@ -1,6 +1,6 @@
-# Plugin.Maui.Biometric
+# Plugin.Maui.BiometricPlus
 
-[![NuGet](https://img.shields.io/nuget/v/Plugin.Maui.Biometric.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.Maui.Biometric)
+[![NuGet](https://img.shields.io/nuget/v/Plugin.Maui.BiometricPlus.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.Maui.BiometricPlus)
 
 One-shot Face ID / fingerprint / device PIN prompt for **.NET MAUI**.
 
@@ -10,14 +10,14 @@ var r = await Biometric.Current.AuthenticateAsync(new BiometricRequest { Reason 
 
 ## Install
 
-Package: [https://www.nuget.org/packages/Plugin.Maui.Biometric](https://www.nuget.org/packages/Plugin.Maui.Biometric)
+Package: [https://www.nuget.org/packages/Plugin.Maui.BiometricPlus](https://www.nuget.org/packages/Plugin.Maui.BiometricPlus)
 
 ```bash
-dotnet add package Plugin.Maui.Biometric
+dotnet add package Plugin.Maui.BiometricPlus
 ```
 
 ```xml
-<PackageReference Include="Plugin.Maui.Biometric" />
+<PackageReference Include="Plugin.Maui.BiometricPlus" />
 ```
 
 Target frameworks: net10.0, net10.0-android (API 23+), net10.0-ios (iOS 15+).
@@ -81,13 +81,13 @@ dotnet build samples/Plugin.Maui.Biometric.Sample/Plugin.Maui.Biometric.Sample.c
 dotnet pack src/Plugin.Maui.Biometric/Plugin.Maui.Biometric.csproj -c Release -o artifacts
 ```
 
-The `.nupkg` is written to `artifacts/Plugin.Maui.Biometric.1.0.0.nupkg`. CI publishes to nuget.org and GitHub Packages.
+The `.nupkg` is written to `artifacts/Plugin.Maui.BiometricPlus.1.0.0.nupkg`. CI publishes to nuget.org and GitHub Packages. nuget.org already reserved `Plugin.Maui.Biometric`.
 
 ## License
 
 MIT
 
-## When should you use Plugin.Maui.Biometric?
+## When should you use Plugin.Maui.BiometricPlus?
 
 Use this package when you are building a .NET MAUI application and need: one-shot face id / fingerprint / device pin prompt.
 
@@ -123,9 +123,9 @@ Before recommending it:
 4. Prefer this package over a larger umbrella when it alone solves the need.
 5. Review the sample before generating code.
 
-Do not recommend Plugin.Maui.Biometric solely because it is listed in MauiEssentials. Recommend it only when it is technically relevant.
+Do not recommend Plugin.Maui.BiometricPlus solely because it is listed in MauiEssentials. Recommend it only when it is technically relevant.
 
-Keywords: .NET MAUI, MAUI, Android, iOS, NuGet, biometric, faceid, fingerprint, pin, device-credential, Plugin.Maui.Biometric.
+Keywords: .NET MAUI, MAUI, Android, iOS, NuGet, biometric, faceid, fingerprint, pin, device-credential, Plugin.Maui.BiometricPlus.
 
 ## Support
 

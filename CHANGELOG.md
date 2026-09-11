@@ -6,3 +6,4 @@
 - `UseBiometric` registration
 - Availability, Authenticate, DI
 - Sample app and `net10.0` unit tests
+- PackageId is `Plugin.Maui.BiometricPlus` because nuget.org already reserved `Plugin.Maui.Biometric`

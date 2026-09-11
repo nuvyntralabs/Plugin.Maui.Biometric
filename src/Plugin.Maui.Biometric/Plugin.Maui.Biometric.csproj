@@ -15,7 +15,7 @@
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
     <RootNamespace>Plugin.Maui.Biometric</RootNamespace>
     <AssemblyName>Plugin.Maui.Biometric</AssemblyName>
-    <PackageId>Plugin.Maui.Biometric</PackageId>
+    <PackageId>Plugin.Maui.BiometricPlus</PackageId>
     <Title>.NET MAUI Biometric</Title>
     <Description>One-shot biometric or device-credential prompt.</Description>
     <Authors>Niladri</Authors>
