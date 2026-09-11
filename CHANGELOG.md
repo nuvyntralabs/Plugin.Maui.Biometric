@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Pack `nuget.png` as the NuGet gallery icon.
+
 ## 1.0.1
 
 - Sample iOS `Info.plist` now includes `NSFaceIDUsageDescription`
