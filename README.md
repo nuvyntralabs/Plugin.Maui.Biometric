@@ -53,11 +53,37 @@ Resolve `IBiometric` from dependency injection, or use `Biometric.Current` after
 | **Authenticate** | Biometric only, or biometric + device credential |
 | **DI** | `UseBiometric` + `Biometric.Current` |
 
+## Permissions
+
+The host app must declare these. Face ID on iOS fails at runtime without `NSFaceIDUsageDescription`.
+
+### Android
+
+Add to `Platforms/Android/AndroidManifest.xml`:
+
+```xml
+<uses-permission android:name="android.permission.USE_BIOMETRIC" />
+<uses-permission android:name="android.permission.USE_FINGERPRINT" />
+```
+
+`USE_FINGERPRINT` covers API 23–27. `USE_BIOMETRIC` is required from API 28.
+
+### iOS
+
+Add to `Platforms/iOS/Info.plist`:
+
+```xml
+<key>NSFaceIDUsageDescription</key>
+<string>Confirm it is you</string>
+```
+
+Touch ID and the device passcode do not need a usage string. Face ID does.
+
 ## Platform notes
 
-**Android** — `USE_BIOMETRIC` in the sample manifest. Uses AndroidX BiometricPrompt.
+**Android** — AndroidX `BiometricPrompt`. Host activity from the current MAUI window.
 
-**iOS** — `NSFaceIDUsageDescription` in Info.plist. Uses `LAContext`.
+**iOS** — `LAContext`. `AllowDeviceCredential` uses `DeviceOwnerAuthentication`; biometric-only uses `DeviceOwnerAuthenticationWithBiometrics`.
 
 | | Notes |
 | --- | --- |
@@ -81,7 +107,7 @@ dotnet build samples/Plugin.Maui.Biometric.Sample/Plugin.Maui.Biometric.Sample.c
 dotnet pack src/Plugin.Maui.Biometric/Plugin.Maui.Biometric.csproj -c Release -o artifacts
 ```
 
-The `.nupkg` is written to `artifacts/Plugin.Maui.BiometricPlus.1.0.0.nupkg`. CI publishes to nuget.org and GitHub Packages. nuget.org already reserved `Plugin.Maui.Biometric`.
+The `.nupkg` is written to `artifacts/Plugin.Maui.BiometricPlus.1.0.1.nupkg`. CI publishes to nuget.org and GitHub Packages. nuget.org already reserved `Plugin.Maui.Biometric`.
 
 ## License
 

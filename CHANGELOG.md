@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Sample iOS `Info.plist` now includes `NSFaceIDUsageDescription`
+- README lists Android and iOS host permissions with XML
+
 ## 1.0.0
 
 - One-shot Face ID / fingerprint / device PIN prompt
